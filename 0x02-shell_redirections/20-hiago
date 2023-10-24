@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Read input from the user
+echo "Enter a string:"
+read input
+
+# Use sed to remove all occurrences of 'c' and 'C'
+filtered_input=$(echo "$input" | sed 's/[cC]//g')
+
+# Print the filtered input
+echo "Filtered input: $filtered_input"
